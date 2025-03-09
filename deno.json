@@ -1,0 +1,21 @@
+{
+  "name": "@iharuya/eagle",
+  "version": "1.0.0",
+  "description": "Eagle API client for TypeScript",
+  "license": "MIT",
+  "exports": {
+    "./rest": "./src/rest/index.ts"
+  },
+  "publish": {
+    "include": [
+      "README.md",
+      "src/**/*.ts"
+    ]
+  },
+  "tasks": {
+    "fix": "deno fmt && deno lint --fix"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
