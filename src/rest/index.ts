@@ -20,7 +20,7 @@ import { LibraryAPI } from "./library/index.ts";
  * ```
  */
 export class EagleAPI extends BaseAPI {
-  constructor(_config?: Config) {
+  constructor(_config?: Partial<Config>) {
     const config = {
       ...DEFAULT_CONFIG,
       ..._config,

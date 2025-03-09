@@ -1,7 +1,7 @@
 import { BaseAPI } from "../../lib/rest-api/index.ts";
 import { queryString } from "../../lib/querystring.ts";
 import type { History, Icon, Info, Switch } from "./dto.ts";
-import { join } from "jsr:@std/path@1.0.8";
+import { join } from "../../lib/join.ts";
 
 export class LibraryAPI extends BaseAPI {
   /**

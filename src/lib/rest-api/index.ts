@@ -1,9 +1,8 @@
 import { APIError } from "./error.ts";
-import { join } from "jsr:@std/path@1.0.8";
+import { join } from "../join.ts";
 
 export type Config = {
   baseUrl: string;
-  fetchLike: typeof fetch;
 };
 
 export class BaseAPI {
@@ -22,7 +21,7 @@ export class BaseAPI {
       ...init.headers,
     });
 
-    const response = await this.config.fetchLike(input, {
+    const response = await fetch(input, {
       redirect: "follow",
       ...init,
       headers,

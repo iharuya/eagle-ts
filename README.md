@@ -1,5 +1,15 @@
 # Eagle API client for Typescript users
 
+<div style="display: flex; gap: 2px;">
+<a href="https://jsr.io/@iharuya/eagle">
+  <img src="https://jsr.io/badges/@iharuya/eagle" alt="" />
+</a>
+
+<a href="https://jsr.io/@iharuya/eagle/score">
+  <img src="https://jsr.io/badges/@iharuya/eagle/score" alt="" />
+</a>
+</div>
+
 [Eagle](https://en.eagle.cool/) is an app to organize all your reference images
 in one place.
 
