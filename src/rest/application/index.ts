@@ -7,7 +7,7 @@ export class ApplicationAPI extends BaseAPI {
    * In most cases, this could be used to determine whether certain
    * functions are available on the user's device.
    */
-  info() {
+  info(): Promise<Info["response"]> {
     const path = "/application/info";
     return this.get<Info["response"]>(path);
   }

@@ -1,7 +1,7 @@
 {
   "name": "@iharuya/eagle",
   "version": "1.0.0",
-  "description": "Eagle API client for TypeScript",
+  "description": "Eagle API client for TypeScript users",
   "license": "MIT",
   "exports": {
     "./rest": "./src/rest/index.ts"

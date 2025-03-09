@@ -7,7 +7,7 @@ export class LibraryAPI extends BaseAPI {
   /**
    * Get detailed information of the library currently running.
    */
-  info() {
+  info(): Promise<Info["response"]> {
     const path = "/library/info";
     return this.get<Info["response"]>(path);
   }
@@ -15,7 +15,7 @@ export class LibraryAPI extends BaseAPI {
   /**
    * Get the list of libraries recently opened by the Application.
    */
-  history() {
+  history(): Promise<History["response"]> {
     const path = "/library/history";
     return this.get<History["response"]>(path);
   }
@@ -23,7 +23,7 @@ export class LibraryAPI extends BaseAPI {
   /**
    * Switch the library currently opened by Eagle.
    */
-  switch(params: Switch["request"]) {
+  switch(params: Switch["request"]): Promise<Switch["response"]> {
     const path = "/library/switch";
     return this.post<Switch["response"]>(path, params);
   }

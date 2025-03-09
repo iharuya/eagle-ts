@@ -1,4 +1,4 @@
-# Eagle API client in Typescript
+# Eagle API client for Typescript users
 
 [Eagle](https://en.eagle.cool/) is an app to organize all your reference images
 in one place.

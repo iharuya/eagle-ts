@@ -12,7 +12,7 @@ export class BaseAPI {
   protected async request(params: {
     input: RequestInfo | URL;
     init: RequestInit;
-  }) {
+  }): Promise<Response> {
     const { input, init } = params;
     const defaultHeaders: HeadersInit = {
       "Content-Type": "application/json",
